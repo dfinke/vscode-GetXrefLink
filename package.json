@@ -1,0 +1,37 @@
+{
+	"name": "vscode-GetXrefLink",
+	"description": "Get xref links in a markdown doc",
+	"version": "0.0.1",
+	"publisher": "Doug Finke",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [		
+        "onLanguage:markdown"        
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"keybindings": [			
+			{
+				"command": "markdown.links",
+				"key": "ctrl+shift+L",
+				"when": "editorTextFocus && editorLangId == 'markdown'"
+			}	
+		],        
+		"commands": [{
+			"command": "markdown.links",
+			"title": "Get XrefLinks in Markdown file"
+		}]
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"typescript": "^1.6.2",
+		"vscode": "0.10.x"
+	}
+}
