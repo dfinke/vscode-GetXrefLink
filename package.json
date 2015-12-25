@@ -1,8 +1,23 @@
 {
 	"name": "vscode-GetXrefLink",
 	"description": "Get xref links in a markdown doc",
+	"displayName" : "Markdown Get Xref Links",
 	"version": "0.0.1",
-	"publisher": "Doug Finke",
+	"publisher": "DougFinke",
+	"icon": "images/logo.png",
+	
+	"license": "SEE LICENSE",
+
+	"bugs": {
+		"url": "https://github.com/dfinke/vscode-GetXrefLink/issues",
+		"email": "finked@hotmail.com"
+	},
+	"homepage": "https://github.com/dfinke/vscode-GetXrefLink/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dfinke/vscode-GetXrefLink.git"      
+	},
+
 	"engines": {
 		"vscode": "^0.10.1"
 	},
