@@ -8,6 +8,6 @@ Lets you add new reference links to the current markdown documents.
 
 **Note:** If no link is selected, empty pair of brackets is inserted
 
-[Enlarged version of video](https://raw.githubusercontent.com/dfinke/GifCam/master/VSCodeSO.gif)
+[Enlarged version of video](https://raw.githubusercontent.com/dfinke/vscode-GetXrefLink/master/images/GetXRefLink.gif)
 
-![image](https://raw.githubusercontent.com/dfinke/GifCam/master/VSCodeSO.gif)
+![image](https://raw.githubusercontent.com/dfinke/vscode-GetXrefLink/master/images/GetXRefLink.gif)
