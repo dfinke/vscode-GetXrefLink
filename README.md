@@ -1,4 +1,4 @@
-# Markdown Get Xrer Links VS Code extension
+# Markdown Get Xref Links VS Code extension
 
 Lets you add new reference links to the current markdown documents.
 
