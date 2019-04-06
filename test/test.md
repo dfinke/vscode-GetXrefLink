@@ -4,10 +4,10 @@ This document uses an inline [link](http://example.com/inline-link-1)
 
 This document uses a second inline link [link](http://example.com/inline-link-2)
 
-This document uses an inline multiple times [link](http://example.com/inline-link-multiple-times)
-This document uses an inline multiple times [link](http://example.com/inline-link-multiple-times)
-This document uses an inline multiple times [link](http://example.com/inline-link-multiple-times)
-This document uses an inline multiple times [link](http://example.com/inline-link-multiple-times)
+This document uses an inline multiple times [multiple-times-1](http://example.com/inline-link-multiple-times)
+This document uses an inline multiple times [multiple-times-2](http://example.com/inline-link-multiple-times)
+This document uses an inline multiple times [multiple-times-3](http://example.com/inline-link-multiple-times)
+This document uses an inline multiple times [multiple-times-4](http://example.com/inline-link-multiple-times)
 
 This document uses the reference-style-link [used-1][used-1-time] one time.
 
