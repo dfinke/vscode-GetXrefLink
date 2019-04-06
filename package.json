@@ -19,7 +19,7 @@
 	},
 
 	"engines": {
-		"vscode": "^0.10.1"
+		"vscode": "^1.0.0"
 	},
 	"categories": [
 		"Other"
@@ -43,10 +43,12 @@
 	},
 	"scripts": {
 		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
 	},
 	"devDependencies": {
+		"@types/node": "8.x.x",
 		"typescript": "^3.4.2",
-		"vscode": "0.10.x"
+		"vscode": "1.1.33"
 	}
 }
