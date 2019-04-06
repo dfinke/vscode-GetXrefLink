@@ -138,13 +138,17 @@ export function activate(context: vscode.ExtensionContext) {
 
                 var result;
                 var items: InlineLinkQuickPickItem[] = [];
+                var seenUrls = new Set();
                 while ( (result = r.exec(text)) ) {
                     var tag=result[1];
                     if(tag.length === 0) {
                         tag="image";                                
                     }
-                            
-                    items.push({ label: tag, description: result[2], kind: 'inline-link', link: result[2] }); 
+                    var link = result[2];
+                    if (!seenUrls.has(link)) {
+                        seenUrls.add(link);
+                        items.push({ label: tag, description: link, kind: 'inline-link', link: link }); 
+                    }
                 }
 
                 return items;

@@ -17,3 +17,4 @@ Lets you add new reference links to the current markdown documents.
 ### Version 0.0.3
 
 * Support reference-style links: unused links are shown first, closest unused link is preferred
+* Prevent duplicate inline-links from showing up multiple times
