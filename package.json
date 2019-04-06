@@ -41,12 +41,14 @@
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
 		"postinstall": "node ./node_modules/vscode/bin/install"
 	},
 	"devDependencies": {
 		"@types/node": "8.x.x",
+		"@types/mocha": "^2.2.32",
+		"mocha": "^2.3.3",
 		"typescript": "^3.4.2",
 		"vscode": "1.1.33"
 	}
