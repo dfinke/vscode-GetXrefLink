@@ -14,13 +14,6 @@ interface ReferenceInfos {
     [label: string]: ReferenceInfo
 }
 
-
-/**
- * In an invalid document, there could be duplicate references.
- * 
- * Thus, the key is `label-{line}-{offset}`
- */
-
 interface UniqueReferenceDefinition { 
     label: string; 
     url: string;
@@ -29,10 +22,6 @@ interface UniqueReferenceDefinition {
 type ReferenceDefinition = UniqueReferenceDefinition | 'multiple-definitions';
 interface ReferenceDefinitions {
     [label: string]: ReferenceDefinition
-}
-
-function getKey(label: string, position: vscode.Position) {
-    return `${label}-${position.line}-${position.character}`;
 }
 
 interface ReferenceInfo {
